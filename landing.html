@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+  <title>Pushing Beyond Enterprise Tech Buyer Regret</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="https://resources.martecedge.com/whitepapers/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://resources.martecedge.com/whitepapers/css/landing.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://jqueryvalidation.org/files/lib/jquery.js"></script>
+  <script src="https://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function () {
+      $.validator.addMethod('nofreeemail', function (value) {
+        return /^([\w-.]+@(?!gmail\.com)(?!yahoo\.com)(?!hotmail\.com)(?!facebook\.com)(?!gmail\.com)(?!gmx\.com)(?!googlemail\.com)(?!hotmail\.com)(?!mac\.com)(?!me\.com)(?!mail\.com)(?!msn\.com)(?!yahoo\.com)(?!aol\.com)(?!google\.com)(?!live\.com)(?!att\.net)(?!comcast\.net)(?!sbcglobal\.net)(?!verizon\.net)([\w-]+.)+[\w-]{2,4})?$/.test(value);
+      }, 'Free email addresses are not allowed.');
+
+      // validate signup form on keyup and submit
+      $("#signup_form").validate({
+        errorElement: 'span',
+        rules: {
+          firstname: {
+            required: true,
+          },
+          lastname: {
+            required: true,
+          },
+          company: {
+            required: true,
+          },
+          job_function: {
+            required: true,
+          },
+          email: {
+            required: true,
+            nofreeemail: true,
+            email: true
+          },
+          work_phone: {
+            required: true,
+            number: true
+          },
+          city: {
+            required: true,
+          },
+          state: {
+            required: true,
+          },
+          zip: {
+            required: true,
+          },
+          country: {
+            required: true,
+          },
+          Industry: {
+            required: true,
+          },
+          address_street1: {
+            required: true,
+          },
+          std1: {
+            required: true,
+          },
+          std2: {
+            required: true,
+          },
+          std3: {
+            required: true,
+          },
+          std4: {
+            required: true,
+          },
+          std5: {
+            required: true,
+          },
+          std6: {
+            required: true,
+          },
+          camp_id: {
+            required: true,
+          },
+          camp_code: {
+            required: true,
+          },
+          std7: {
+            required: true,
+          }
+        },
+        messages: {
+          firstname: {
+            required: "This field is required."
+          },
+          lastname: {
+            required: "The details are incorrect/incomplete"
+          },
+          company: {
+            required: "The details are incorrect/incomplete"
+          },
+          job_function: {
+            required: "The details are incorrect/incomplete"
+          },
+          email: {
+            required: "Please enter an email address",
+                < !--nofreeemail: "Please enter your business email, generic email not allowed", -- >
+          email: "Please enter a valid email address"
+              },
+        work_phone: {
+        required: "The details are incorrect/incomplete",
+        number: "Phone number must contain digits only"
+      },
+        city: {
+        required: "The details are incorrect/incomplete"
+      },
+        state: {
+        required: "The details are incorrect/incomplete"
+      },
+        country: {
+        required: "The details are incorrect/incomplete"
+      },
+        Industry: {
+        required: "The details are incorrect/incomplete"
+      },
+        zip: {
+        required: "The details are incorrect/incomplete",
+        number: "Zip code must contain digits only",
+        rangelength: "Zip code must have between 3 to 5 digits"
+      },
+        address_street1: {
+        required: "The details are incorrect/incomplete"
+      },
+        std1: {
+        required: "The details are incorrect/incomplete"
+      },
+        std2: {
+        required: "The details are incorrect/incomplete"
+      },
+        std3: {
+        required: "The details are incorrect/incomplete"
+      },
+        std4: {
+        required: "The details are incorrect/incomplete"
+      },
+        std5: {
+        required: "The details are incorrect/incomplete"
+      },
+        std6: {
+        required: "The details are incorrect/incomplete"
+      },
+        camp_id: {
+        required: "The details are incorrect/incomplete"
+      },
+        camp_code: {
+        required: "The details are incorrect/incomplete"
+      },
+        std7: {
+        required: "The details are incorrect/incomplete"
+      }
+            }
+          });
+      });
+  </script>
+  <style>
+    @media (min-width: 375px) {
+      .hdb {
+        height: 130px;
+      }
+    }
+
+    .shado:hover {
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    }
+    ul li::before {
+    content: "\2022";
+    float: left;
+    
+    color: #000000;
+}
+  </style>
+</head>
+
+<body style="font-family: Verdana, Geneva, sans-serif;width:100%;
+
+  background-color:#FFFFFF;
+  border:16px solid;
+  border-style: ridge groove;
+  border-color: #ff7700;" >
+  <!-- <img src="./logo.png" width="150" alt="" style="padding: 20px; margin-bottom: 10px; " class="img-responsive" /> -->
+  <div class="container">
+    <!--SPONSER LOGO START-->
+
+    <!--SPONSER LOGO END-->
+  </div>
+  <div class="container" style="width:90%">
+    <!-- style="width: 950px;" -->
+    <div class="panel">
+      <div class="panel-body" style="background-color: white;padding-bottom: -9%;">
+        <div style="padding: -8%;">
+          <img src="./logo.png" width="150" alt="" style="margin-top: 3%; " class="img-responsive" />
+
+          <!-- <div class="row" style="margin-top:35px ;">
+            <div class="col-md-8" style="">
+
+              
+              <h1 style="     font-size: 50px;
+              line-height: 55px;
+              font-weight: 800;
+              color: #002856;
+              font-family: Arial,sans-serif;
+                                        ">
+                Pushing Beyond Enterprise Tech Buyer Regret</h1>
+
+              <h5
+                style="font-size: 26px;
+                line-height: 32.5px;
+                font-weight: 400;
+                color: #000;
+                font-family: Arial,sans-serif;">
+                Address buying challenges to accelerate tech sales growth. </h5>
+            </div>
+
+            <div class="col-md-4">
+              <img src="https://emtemp.gcom.cloud/ngw/globalassets/en/industries/images/covers/pushing-beyond-enterprise-tech-buyer-regret-ebook-cover.png" class="img-responsive" width="400" style="">
+            </div>
+          </div> -->
+     
+          
+
+          <div class="row" style="margin-top:15px ;">
+            <div class="col-md-7">
+              <strong>
+                <p style="font-size:25px;">Pushing Beyond Enterprise Tech Buyer Regret</p>
+              </strong>
+              
+              <p style="    font-size: 17px;
+    
+    font-weight: 500;">Address buying challenges to accelerate tech sales growth.</p>
+    <br>
+              <p
+                style="font-size: 14px;
+                line-height: 25px;
+                
+                color: #000;    line-height: 27px; margin-bottom: 24px;">
+                <strong>Seventy-three percent of tech purchasers who have bought but not yet implemented their
+                  products/solutions indicated high regret.</strong>
+                  <img src="https://emtemp.gcom.cloud/ngw/globalassets/en/industries/images/covers/pushing-beyond-enterprise-tech-buyer-regret-ebook-cover.png" class="img-responsive" width="400" style="    float: right;">
+              </p>
+
+              <p
+                style="width: 100%;font-size:14px;text-align: left;color:#000000;font-family: Verdana, Geneva, sans-serif;line-height: 23px;    line-height: 27px;text-align: justify;">
+                Buying and selling enterprise technology products and solutions has never been easier or harder.
+                Frustrations are expanding as technology decisions become ever more democratized. </p>
+
+              <p
+                style="width: 100%;font-size:14px;text-align: left;color:#000000;font-family: Verdana, Geneva, sans-serif;line-height: 23px;     line-height: 27px;text-align: justify;">
+                For the sellers of these products, the paradox between more customer power and more regret directly
+                impacts their growth strategies.</p>
+              <p
+                style="font-size: 14px;
+                line-height: 25px;
+               
+                color: #000; margin-top: 24px;">
+                <strong>Download this eBook to get actionable insights on how to tackle regret head-on</strong> 
+                <span style="width: 100%;font-size:14px;text-align: left;color:#000000;font-family: Verdana, Geneva, sans-serif;line-height: 23px;    line-height: 27px;">
+                  so you can:
+                </span>
+
+                <ul
+                style="width: 100%;font-size:14px;text-align: left;color:#000000;font-family: Verdana, Geneva, sans-serif;line-height: 23px;     line-height: 32px;">
+                <li>Accelerate buying cycles.</li>
+                <li>Reduce friction that can subdue expansion.</li>
+                <li>Lessen the chances that no decision is made at all.</li>
+                <li>Build more collaborative relationships with your customers.</li>
+              </ul>
+              </p>
+              
+
+            </div>
+
+            <div class="col-md-5 "
+            style=" background-color: #f4f4f4; border-radius: 6px; margin-bottom: 15px;">
+    
+    
+            <form action="sendmail.php" id="signup_form" method="post" class="validate" style="">
+    
+              <!--XXX ... DON'T CHANGE THIS CODE ... XXX-->
+              <input type="hidden" name="camp_id" id="camp_id" value="RealPage" />
+              <input type="hidden" name="camp_name" value="RealPage-Q1FY22" />
+              <input type="hidden" name="asset_title" value="Realize Operational Excellence" />
+              <!--XXX ... DON'T CHANGE THIS CODE ... XXX-->
+    
+              <center>
+                <div class=""
+                  style="padding-bottom: 10px; width: 109%; margin-left: -4.7%; border-radius: 5px 5px 0px 0px;">
+                  
+                    <h4
+                      style="font-size: 30px;
+                      line-height: 33.75px;
+                      font-weight: 500;
+                      color: #002856;
+                      font-family: Verdana, Geneva, sans-serif;
+                      text-align: left;
+                      margin-left: 6%;
+                      margin-top: 22px; font-family:Verdana, Geneva, sans-serif;">
+                      Download the eBook
+                    </h4>
+                  
+                </div>
+    
+                <br>
+                <div class="row">
+                   <div class="form-row">
+                     <div class="form-group col-md-6">
+                        <input id="firstname" name="fname" type="text" value="" class="form-control"
+                           placeholder="First Name" required="required" />
+                     </div>
+                     <div class="form-group col-md-6">
+                        <input id="lastname" name="data[0]" type="text" value="" class="form-control"
+                           placeholder="Last Name" required="required" />
+                     </div>
+                  </div>
+                  <br />
+                  
+                      <div class="form-row">
+                     <div class="form-group col-md-6">
+                        <input id="email" name="data[1]" type="email" value="" class="form-control" placeholder="Work Email"required="" />
+                     </div>
+                     <div class="form-group col-md-6">
+                        <input id="Phone" name="data[2]" type="text" value="" class="form-control" placeholder="Phone"
+                      required="required" />
+                     </div>
+                        <div class="form-row">
+                     <div class="form-group col-md-6">
+                        <input id="company" name="data[3]" type="text" value="" class="form-control" placeholder="Company Name"
+                      required="required" />
+                     </div>
+                     <div class="form-group col-md-6">
+                        <select name="data[4]" id="country" class="form-control" required="required">
+                      <option value="" selected disabled>Country</option>
+                      <option value="United States">United States</option>
+    
+                    </select>
+
+                     </div>
+                     <div class="row">
+                    <select name="data[5]" id="Job_Title" class="form-control" required="required" style="width: 97%;">
+                      <option value="" selected disabled>Job Title</option>
+                      <option value="AVP OF Product Management">AVP OF Product Management</option>
+                      <option value="Chief Product Officer CPO">Chief Product Officer CPO</option>
+                      <option value="Director of Product Management">Director of Product Management</option>
+                      <option value="Director Product Strategy">Director Product Strategy</option>
+                      <option value="Director">Director</option>
+                      <option value="Market Product Management">Market Product Management</option>
+                      <option value="Product Management">Product Management</option>
+                      <option value="Head Of Product">Head Of Product</option>
+                      <option value="Product & Solutions">Product & Solutions</option>
+                      <option value="Product Development">Product Development</option>
+                      <option value="Product Management">Product Management</option>
+                      <option value="Director Product/Delivery Leader">Director Product/Delivery Leader</option>
+                      <option value="Senior Director of Product Management">Senior Director of Product Management
+                      </option>
+                      <option value="Senior Director Product Management">Senior Director Product Management</option>
+                      <option value="Senior Director">Senior Director</option>
+                      <option value="Product Management">Product Management</option>
+                      <option value="Senior Vice President & Head of Product">Senior Vice President & Head of Product
+                      </option>
+                      <option value="Sr. Director">Sr. Director</option>
+                      <option value="SVP & Head of Product">SVP & Head of Product</option>
+                      <option value="SVP Product Management">SVP Product Management</option>
+                      <option value="Vice President of Product Management">Vice President of Product Management</option>
+                      <option value="Vice President">Vice President</option>
+                      <option value="Product Management">Product Management</option>
+                      <option value="VP Product Development">VP Product Development</option>
+                      <option value="VP Product Delivery">VP Product Delivery</option>
+                      <option value="VP Product Management">VP Product Management</option>
+                      <option value="VP Product Management">VP Product Management</option>
+    
+                    </select>
+                  </div>
+                  </div>
+                 
+
+                  
+                 
+                  <br />
+                  <div class="row">
+                    <p style="text-align: justify;"><input type="checkBox" name="data[6]"
+                        style="width: 13px; height: 13px;"> By providing your information, you agree that Gartner may contact you about products, services, exclusive offers and special events. To read more about how Gartner may use your information, read Gartner's <a href="https://www.gartner.com/en/about/policies/privacy"> privacy policy.</a> You can <a href="https://www.techinsightsmedia.com/unsubscribe/unsubscribe/">unsubscribe </a> at any time.
+    
+    
+    
+                    </p>
+                    
+                  </div>
+                  <br />
+                  <div class="row">
+                    <center><button type="submit" id="submit_button" name="submit" class="btn"
+                        style="border-radius: 30px;
+    background-color: #112453;
+    color: #fff;
+    width: 70%;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+                    ">DOWNLOAD NOW</button></center>
+                  </div>
+                </div>
+              </center>
+              <br>
+              <br><br><br>
+            </form>
+          </div>
+          </div>
+
+
+        </div>
+      </div>
+
+     
+     
+    </div>
+  </div>
+  </div>
+
+
+  </div>
+  <!-- <footer style="background-color:#1d1d1d; color: white; padding:25px;">
+    <div class="span12 center">
+      <br>
+      <center><small> Copyright © Martecedge <br> <a style="color: white;" href="https://martecedge.com/unsubscribe/"
+            target="_blank"> Click here to Unsubscribe</a> | <a style="color: white;"
+            href="https://martecedge.com/privacy-policy/" target="_blank"> Privacy Policy</a> <br></small></center>
+      <p align="left" style=" font-size: 13px; ">
+      </p>
+    </div>
+  </footer> -->
+</body>
+
+</html>
